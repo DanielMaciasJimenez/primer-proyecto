@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registropaciente.css">
     <title>Formato para la inscripción de pacientes</title>
 </head>
 <body>
-    <h1>Registro de nuevos pacientes</h1>
-    <label>Nombre del paciente</label> <input type="text"><br></br>
-    <label>Apellido del paciente</label>
-    <label>Edad del paciente</label> <input type="number"><br></br>
-    <label>Nombre del responsable</label> <input type="text"><br></br>
-    <label>Cédula</label> <input type="number"><br></br>
-    <label>Dirección</label> <input type="text"><br></br>
-    <label>Número de teléfono</label> <input type="number"><br></br>
-<button>Registro</button><br></br>
-<a href="vethome.html">Volver al inicio</a>
+   
+    
+   <div class="contenedor">
+        <h1>Registro</h1><br></br>        
+    
+            <div class="registro">
+
+       
+                 <input type="text" required>
+                 <div class="informacion">Nombre del responsable</div><br></br>
+                
+                <input type="text"required>
+                <div class="informacion"> Apellido</div><br></br>
+
+                <input type="text"required>
+                <div class="informacion">Nombre de la mascota</div><br></br>
+
+                <input type="text"required>
+                <div class="informacion">Animal</div> <br></br>
+
+                <input type="number"required>
+                <div class="informacion">Edad</div><br></br>
+
+                <input type="number"required>
+                <div class="informacion">Número de contacto</div><br></br>
+
+                <input type="email"required>
+                <div class="informacion">Correo electrónico</div><br></br>
+            
+                <button>Guardar</button><br></br>
+
+                <a class="regresar" href="vethome.HTML">Regresar al inicio</a>
+            
+            </div>
+        
+      
+               
+    </div>
+
+
+
 </body>
 </html>
