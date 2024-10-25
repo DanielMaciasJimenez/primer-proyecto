@@ -157,13 +157,3 @@ function validar_numeros(numero_campo) {
 
 
 
-
-
-
-
-
-
-
-function validar_contrasena(){
-
-}
