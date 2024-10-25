@@ -9,8 +9,10 @@ function registro_cliente(){
     let numero = document.getElementById("phone").value
     let correo = document.getElementById("e_mail").value
 
- 
-   let confir_vacio = validar_vacio(nombre, apellido , cedula, n_mascota, animal, edad, numero, correo)
+    let confirm_texto= false
+    let confirm_numeros= false
+   
+    let confir_vacio = validar_vacio(nombre, apellido , cedula, n_mascota, animal, edad, numero, correo)
    
    if (confir_vacio){
         let confirmar_nombre = validar_texto(nombre)
@@ -19,37 +21,50 @@ function registro_cliente(){
         let confirmar_animal = validar_texto(animal)
         let confirmar_cedula = validar_numeros(cedula)
         let confirmar_celular = validar_numeros(numero)
-        let confirm_texto= false
-        let confirm_numeros= false
-        if (confirmar_nombre && confirmar_apellido&& confirmar_mascota && confirmar_animal){ 
-           confirm_texto = true
+       
+       
+       
+        if (confirmar_nombre && confirmar_apellido && confirmar_mascota && confirmar_animal){ 
+           confirm_texto = true;
         }
         else {
             alert("Los campos:Nombre, Apellido, Mascota y Animal deben estar sin números")
         }
 
-    }
 
-    else{
-        alert("Ninguno de los campos debe estar vacio")
-    }      
-
-       
         if(confirmar_cedula&&confirmar_celular){
             confirm_numeros = true
             }
+           
             else{
                 alert("Los campos de Cédula y Número no pueden llevar letras")
+        
             } 
-        /*REVISAR POSIBLE ERROR POR LA CREACION DE CONFIRM_NUMEROS*/
-        if (confirm_texto == true && confirm_numeros == true){
+    
+               /*REVISAR POSIBLE ERROR POR LA CREACION DE CONFIRM_NUMEROS*/
+        if (confirm_texto && confirm_numeros){
             alert("Usuario fue creado correctamente")
         }
+
+        else{
+            alert("Error al crear usuario")
+        }
+    
+    }
+
+  
+       
+            
+         
+
 
 
 
 
 }
+
+
+
 
  function validar_vacio(nombre, apellido , cedula, n_mascota, animal, edad, numero, correo) {
   let confir_vacio= true
@@ -121,9 +136,25 @@ function registro_cliente(){
  }
 
 
-function validar_numeros() {
+function validar_numeros(numero_campo) {
+    let confirm_numeros = true
+    let array_numer = Array.from(numero_campo)
 
+
+    for(let i=0; i<array_numer.length; i++){
+        if( array_numer[i] == '0' || array_numer[i] == '1' || array_numer[i] == '2' || array_numer[i] == '3' || array_numer[i] == '4' || array_numer[i] == '5' || array_numer[i] == '6' || array_numer[i] == '7' || array_numer[i] == '8' || array_numer[i] == '9'){
+
+
+        }
+        else{
+            confirm_numeros = false
+            break
+        }
+       
+    }
+    return confirm_numeros
 }
+
 
 
 
