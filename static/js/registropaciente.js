@@ -37,7 +37,7 @@ function registro_cliente(){
             }
            
             else{
-                alert("Los campos de Cédula y Número no pueden llevar letras")
+                alert("Los campos de Cédula y Número no pueden llevar letras ni caracteres especiales")
         
             } 
     
