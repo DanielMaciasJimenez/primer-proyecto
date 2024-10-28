@@ -54,11 +54,6 @@ function registro_cliente(){
 
   
        
-            
-         
-
-
-
 
 
 }
