@@ -62,3 +62,51 @@ a{
     margin: 10px 10px;
     border-radius: 7px;
 }
+
+@media screen and (max-width:412px) {
+   
+    .tabla{
+       text-align: center;
+       font-size: 30px; 
+    }
+    
+    body{
+       
+        height: auto;    
+        align-items: center;
+        
+    }
+
+   th{
+    font-size: 11px;
+    padding: 11px 0px;
+    width: 100%;
+   }
+   
+   td{
+    font-size: 8px;
+    width: 100%;
+   }
+
+   h1{
+    font-size: 40px;
+    width: 105%;
+   }
+   .buscar{
+    font-size: 25px;
+    width: 105%;
+   }
+
+   .volver{
+    font-size: 40px;
+    width: 75%;
+   }
+
+   table {
+     width: 100%;
+     table-layout: auto;
+     
+   }
+
+}
+
