@@ -81,3 +81,30 @@ button{
     text-align: center;
     color: rgb(35, 35, 209);
 }
+
+
+
+@media screen and (max-width:412px) {
+   
+
+    .contenedor{
+        font-size: 11px;
+        padding:  10px 10px;
+        line-height: 20px;
+        
+    
+    }
+   
+    body {
+        margin: 5%;
+       }
+
+   input {
+       padding: 0 15px;
+
+   }
+
+   .registro {
+       height: auto;
+   }
+}
