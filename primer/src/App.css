@@ -2,3 +2,18 @@
   text-align: center;
 }
 
+body{
+  min-height: 100vh;
+  background-image:url("img/fondo2.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+}
+
+
+.servicios_titulo{
+  text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}

@@ -3,7 +3,7 @@ import './barrabusqueda.css';
 
 function Barrabusqueda (){
     return(
-        <div>
+        <div className="barra">
              <ul className="opciones">
                         <li> <a className="link_opciones" href="registropaciente.html"> Registro</a> </li>
                         <li> <a className="link_opciones" href="consultaregistro.html"> Consulta de registro</a></li>
