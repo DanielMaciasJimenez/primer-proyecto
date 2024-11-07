@@ -83,3 +83,35 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+
+
+.tabla_de_paciente{
+  color: white;
+  font-size: 40px;
+  table-layout: fixed;
+  text-align: center;
+
+}
+
+
+
+.paciente_tabla2{
+
+  font-size: px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.datos_paciente{
+  font-size: 11px;
+  table-layout: fixed;
+
+
+}
+
+.datos_paciente1{
+  font-size: 25px;
+  padding: 20px 20px;
+  width: 0.10%;
+  text-align: center;
+}

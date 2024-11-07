@@ -5,10 +5,37 @@ import Servicios from './components/servicios';
 import Bañogratis from './components/bañogratis';
 import Consultagratis from './components/consultagratis';
 import Piedepagina from './components/piedepagina';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Regispaciente from './components/regis_paciente';
+import Consulpaciente from './components/consul_paciente';
+import Regiscita from './components/regis_cita';
+import Consulcita from './components/consul_cita';
+
+
+
 function App() {
   return (
+     
     <div className="App">
       <Barrabusqueda></Barrabusqueda> <br></br><br></br>
+      
+      
+      <BrowserRouter>
+       <Routes>
+        
+          <Route path='/regis_paciente' element={<Regispaciente/>}  > </Route>
+          <Route path='/consul_paciente' element={<Consulpaciente/>}  > </Route>
+          <Route path='/regis_cita' element={<Regiscita/>}  > </Route>
+          <Route path='/consul_cita' element={<Consulcita/>}  > </Route>
+
+
+
+
+        </Routes>
+      </BrowserRouter>
+     
+     
+      
       <h1 className="servicios_titulo">Nuestros servicios</h1>
       <Servicios></Servicios><br></br><br></br>
 
